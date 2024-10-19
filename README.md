@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/ElryGH/hyprwave/refs/heads/main/logo.png" alt="Hyprwave Logo" width="100" />
 
-**Hyprwave** is a Hyprland config with a "less is more" philosophy. </br>
+**Hyprwave** is a Hyprland configuration designed with a "less is more" philosophy. </br>
 Based on [Hyprdots](https://github.com/prasanthrangan/hyprdots), it trims down unneeded extra features.
 
 ### Features:
