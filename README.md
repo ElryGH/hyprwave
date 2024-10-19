@@ -18,4 +18,5 @@ Be sure to review and modify the following files to fit your own setup:
 - Check the packages in `software.lst` and install only what's relevant to you.
 
 **Why Hyprwave?** </br>
-Hyprdots is awesome, but it does a bit too much. If you prefer a lightweight configuration that focuses on usability without overwhelming options, **Hyprwave** is the perfect fit.
+Hyprdots is awesome, but it does way too much. (Multiple layouts, waybars, wallpapers, etc) </br>
+If you prefer a rice that focuses on style without overwhelming options, **Hyprwave** is the perfect fit.
