@@ -11,7 +11,8 @@ Based on [Hyprdots](https://github.com/prasanthrangan/hyprdots), it trims down u
 - Easily customizable for your needs
 
 ### Disclaimer:
-This configuration is tailored to my personal setup. Be sure to review and modify the following files to fit your own setup:
+This configuration is tailored to my personal setup. </br>
+Be sure to review and modify the following files to fit your own setup:
 - `dotfiles/.config/hypr/wallpaper.conf`
 - `dotfiles/.config/hypr/monitors.conf`
 - Check the packages in `software.lst` and install only what's relevant to you.
