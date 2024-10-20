@@ -1,6 +1,6 @@
 # Hyprwave
 
-<img src="https://raw.githubusercontent.com/ElryGH/hyprwave/refs/heads/main/logo.png" alt="Hyprwave Logo" width="100" />
+<img src="https://raw.githubusercontent.com/ElryGH/hyprwave/refs/heads/main/Screenshot.png" alt="Hyprwave Screenshot" width="350" />
 
 **Hyprwave** is a Hyprland configuration designed with a "less is more" philosophy. </br>
 Based on [Hyprdots](https://github.com/prasanthrangan/hyprdots), it trims down unneeded extra features.
