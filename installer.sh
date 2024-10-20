@@ -64,7 +64,7 @@ yes "" | ./install.sh  # Automatic default option selection
 
 # Uninstall Garbage from Hyprdots
 flatpak uninstall || true
-yay -Rsc --noconfirm vlc firefox ark code || true 
+yay -Rsc --noconfirm vlc firefox ark code dunst || true 
 
 # Change to the original dir
 cd $OLD_DIR
@@ -89,9 +89,6 @@ cd $OLD_DIR
 echo "Changing SDDM Design"
 sudo rm -rf /usr/share/sddm/themes/*
 sudo cp -rf $PWD/sddm/Candy /usr/share/sddm/themes/
-sudo rm -f /usr/lib/sddm/sddm.conf.d/default.conf
-sudo cp -f $PWD/sddm/default.conf /usr/lib/sddm/sddm.conf.d/default.conf
-sudo cp -f $PWD/sddm/Xsetup /usr/share/sddm/scripts/Xsetup
 
 # Adding some OS flair
 sudo cp -rf $PWD/etc/ /etc/

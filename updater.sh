@@ -44,8 +44,6 @@ if ask_yes_no; then
     cp ~/.zshrc $PWD/dotfiles/.zshrc
     cp -rf ~/.local/share/bin/ $PWD/dotfiles/.local/share/bin/
     cp -rf /usr/share/sddm/themes/Candy/ $PWD/sddm/Candy/
-    sudo cp /usr/lib/sddm/sddm.conf.d/default.conf $PWD/sddm/default.conf
-    sudo cp /usr/share/sddm/scripts/Xsetup $PWD/sddm/Xsetup
     sudo cp /etc/os-release $PWD/etc/os-release
     sudo cp /etc/hyprwave $PWD/etc/hyprwave
     echo "Done."

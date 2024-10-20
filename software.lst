@@ -1,12 +1,12 @@
 # These are software used by me and you can remove what you dont need.
 
+gnome-keyring
+libsecret
 steam
 spotify
 spicetify-cli
 google-chrome
 discord
-gnome-keyring
-libsecret
 unityhub
 jetbrains-toolbox
 gitfriend
