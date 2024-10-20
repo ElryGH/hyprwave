@@ -56,14 +56,12 @@ wget https://raw.githubusercontent.com/korvahannu/arch-nvidia-drivers-installati
 sudo mkdir -p /etc/pacman.d/hooks/
 sudo mv ./nvidia.hook /etc/pacman.d/hooks/
 
-# Clone Hyprdots and run the install script with default options
-echo "Cloning Hyprdots and running the install script..."
-git clone --depth 1 https://github.com/prasanthrangan/hyprdots ~/HyDE
-cd ~/HyDE/Scripts
-yes "" | ./install.sh  # Automatic default option selection
-
 # Change to the original dir
 cd $OLD_DIR
+
+# Install required packages from required.lst with yay (ignoring comments)
+echo "Installing packages from software.lst..."
+grep -v '^#' software.lst | xargs yay -S --needed --noconfirm
 
 # Install packages from software.lst with yay (ignoring comments)
 echo "Installing packages from software.lst..."
@@ -71,7 +69,7 @@ grep -v '^#' software.lst | xargs yay -S --needed --noconfirm
 
 # Delete old configuration folders
 echo "Deleting old configuration folders..."
-sudo rm -rf ~/.config/hyde ~/.config/hypr ~/.config/waybar ~/.config/rofi ~/.config/fastfetch ~/.local/share/bin
+sudo rm -rf ~/.config/
 
 # Copy new configuration folders
 echo "Copying new configuration folders..."
