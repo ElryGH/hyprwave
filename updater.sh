@@ -34,19 +34,19 @@ mkdir $PWD/etc/
 
 # Example usage of the function
 if ask_yes_no; then
-    cp -rf ~/.config/hypr/ $PWD/dotfiles/.config/
-    cp -rf ~/.config/waybar/ $PWD/dotfiles/.config/
-    cp -rf ~/.config/spicetify/ $PWD/dotfiles/.config/
-    cp -rf ~/.config/wallpaper/ $PWD/dotfiles/.config/
-    cp -rf ~/.config/rofi/ $PWD/dotfiles/.config/
-    cp -rf ~/.config/fastfetch/ $PWD/dotfiles/.config/
-    cp ~/.zshrc $PWD/dotfiles/
-    cp -rf ~/.local/share/bin/ $PWD/dotfiles/.local/share/
-    cp -rf /usr/share/sddm/themes/Candy/ $PWD/sddm/
-    sudo cp /usr/lib/sddm/sddm.conf.d/default.conf $PWD/sddm/
-    sudo cp /usr/share/sddm/scripts/Xsetup $PWD/sddm/
-    sudo cp /etc/os-release $PWD/etc/
-    sudo cp /etc/hyprwave $PWD/etc/
+    cp -rf ~/.config/hypr/ $PWD/dotfiles/.config/hypr/
+    cp -rf ~/.config/waybar/ $PWD/dotfiles/.config/waybar/
+    cp -rf ~/.config/spicetify/ $PWD/dotfiles/.config/spicetify/
+    cp -rf ~/.config/wallpaper/ $PWD/dotfiles/.config/wallpaper/
+    cp -rf ~/.config/rofi/ $PWD/dotfiles/.config/rofi/
+    cp -rf ~/.config/fastfetch/ $PWD/dotfiles/.config/fastfetch/
+    cp ~/.zshrc $PWD/dotfiles/.zshrc
+    cp -rf ~/.local/share/bin/ $PWD/dotfiles/.local/share/bin/
+    cp -rf /usr/share/sddm/themes/Candy/ $PWD/sddm/Candy/
+    sudo cp /usr/lib/sddm/sddm.conf.d/default.conf $PWD/sddm/default.conf
+    sudo cp /usr/share/sddm/scripts/Xsetup $PWD/sddm/Xsetup
+    sudo cp /etc/os-release $PWD/etc/os-release
+    sudo cp /etc/hyprwave $PWD/etc/hyprwave
     echo "Done."
 else
     exit
