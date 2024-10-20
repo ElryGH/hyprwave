@@ -29,6 +29,7 @@ sudo rm -rf $PWD/etc/
 mkdir $PWD/dotfiles/
 mkdir $PWD/dotfiles/.config/
 mkdir $PWD/dotfiles/.local/
+mkdir $PWD/dotfiles/.local/share/
 mkdir $PWD/sddm/
 mkdir $PWD/etc/
 
