@@ -5,7 +5,7 @@
 
 scrDir="$(dirname "$(realpath "$0")")"
 source "${scrDir}/globalcontrol.sh"
-roconf="${confDir}/rofi/styles/style_${rofiStyle}.rasi"
+roconf="${confDir}/rofi/style.rasi"
 
 [[ "${rofiScale}" =~ ^[0-9]+$ ]] || rofiScale=10
 

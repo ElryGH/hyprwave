@@ -86,7 +86,7 @@ echo "Changing SDDM Design"
 sudo rm -rf /usr/share/sddm/themes/*
 sudo cp -rf $PWD/sddm/Candy /usr/share/sddm/themes/
 sudo rm -f /usr/lib/sddm/sddm.conf.d/default.conf
-sudo cp -f $PWD/sddm/default.conf /usr/lib/sddm/sddm.conf.d/
+sudo cp -f $PWD/sddm/default.conf /usr/lib/sddm/sddm.conf.d/default.conf
 sudo cp -f $PWD/sddm/Xsetup /usr/share/sddm/scripts/Xsetup
 
 # Adding some OS flair

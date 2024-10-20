@@ -157,7 +157,7 @@ generate_json() {
   speedo=$(echo $icons | awk -F, '{print $3}')
 
   # emoji=$(get_temperature_emoji "${temperature}")
-  local json="{\"text\":\"${thermo} ${temperature}°C\", \"tooltip\":\"${primary_gpu}\n${thermo} Temperature: ${temperature}°C ${emoji}"
+  local json="{\"text\":\"󰍹 ${utilization}%\"}"
 #? Soon Add Something incase needed.
   declare -A tooltip_parts
   if [[ -n "${utilization}" ]]; then tooltip_parts["\n$speedo Utilization: "]="${utilization}%" ; fi
