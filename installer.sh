@@ -62,6 +62,10 @@ git clone --depth 1 https://github.com/prasanthrangan/hyprdots ~/HyDE
 cd ~/HyDE/Scripts
 yes "" | ./install.sh  # Automatic default option selection
 
+# Uninstall Garbage from Hyprdots
+flatpak uninstall || true
+yay -Rsc --noconfirm vlc firefox ark code || true 
+
 # Change to the original dir
 cd $OLD_DIR
 
