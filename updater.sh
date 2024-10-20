@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 # Warn people that they should not use this.
 
@@ -20,6 +20,18 @@ ask_yes_no() {
     done
 }
 
+# Delete previous folders to remove chance of leftovers.
+sudo rm -rf $PWD/dotfiles
+sudo rm -rf $PWD/sddm
+sudo rm -rf $PWD/etc
+
+# Create folders
+mkdir $PWD/dotfiles
+mkdir $PWD/dotfiles/.config
+mkdir $PWD/dotfiles/.local
+mkdir $PWD/sddm
+mkdir $PWD/etc
+
 # Example usage of the function
 if ask_yes_no; then
     cp -rf ~/.config/hypr $PWD/dotfiles/.config/
@@ -27,11 +39,14 @@ if ask_yes_no; then
     cp -rf ~/.config/spicetify $PWD/dotfiles/.config/
     cp -rf ~/.config/wallpaper $PWD/dotfiles/.config/
     cp -rf ~/.config/rofi $PWD/dotfiles/.config/
+    cp -rf ~/.config/fastfetch $PWD/dotfiles/.config/
+    cp ~/.zshrc $PWD/dotfiles/
     cp -rf ~/.local/share/bin $PWD/dotfiles/.local/
     cp -rf /usr/share/sddm/themes/Candy $PWD/sddm/
     sudo cp /usr/lib/sddm/sddm.conf.d/default.conf $PWD/sddm/
     sudo cp /usr/share/sddm/scripts/Xsetup $PWD/sddm
-    cp ~/.zshrc $PWD/dotfiles/
+    sudo cp /etc/os-release $PWD/etc
+    sudo cp /etc/hyprwave $PWD/etc
     echo "Done."
 else
     exit

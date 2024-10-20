@@ -71,7 +71,7 @@ grep -v '^#' software.lst | xargs yay -S --needed --noconfirm
 
 # Delete old configuration folders
 echo "Deleting old configuration folders..."
-sudo rm -rf ~/.config/hyde ~/.config/hypr ~/.config/waybar ~/.config/rofi ~/.local/share/bin
+sudo rm -rf ~/.config/hyde ~/.config/hypr ~/.config/waybar ~/.config/rofi ~/.config/fastfetch ~/.local/share/bin
 
 # Copy new configuration folders
 echo "Copying new configuration folders..."
@@ -84,10 +84,13 @@ cd $OLD_DIR
 # Override the SDDM Config
 echo "Changing SDDM Design"
 sudo rm -rf /usr/share/sddm/themes/*
-sudo cp -r $PWD/sddm/Candy /usr/share/sddm/themes/
+sudo cp -rf $PWD/sddm/Candy /usr/share/sddm/themes/
 sudo rm -f /usr/lib/sddm/sddm.conf.d/default.conf
 sudo cp -f $PWD/sddm/default.conf /usr/lib/sddm/sddm.conf.d/
 sudo cp -f $PWD/sddm/Xsetup /usr/share/sddm/scripts/Xsetup
+
+# Adding some OS flair
+sudo cp -rf $PWD/etc/ /etc/
 
 # Final removal of files
 sudo rm -rf -rf ~/HyDE ~/yay ~/.cache

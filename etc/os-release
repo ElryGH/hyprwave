@@ -1,0 +1,8 @@
+NAME="Hyprwave"
+PRETTY_NAME="Hyprwave"
+ID=arch-hyprwave
+BUILD_ID=rolling
+ANSI_COLOR="1;37"
+HOME_URL="https://github.com/ElryGH/hyprwave"
+BUG_REPORT_URL="https://github.com/ElryGH/hyprwave/issues"
+LOGO="/etc/hyprwave"
