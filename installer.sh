@@ -60,11 +60,11 @@ sudo mv ./nvidia.hook /etc/pacman.d/hooks/
 cd $OLD_DIR
 
 # Install required packages from required.lst with yay (ignoring comments)
-echo "Installing packages from software.lst..."
-grep -v '^#' software.lst | xargs yay -S --needed --noconfirm
+echo "Installing base packages from required.lst..."
+grep -v '^#' required.lst | xargs yay -S --needed --noconfirm
 
 # Install packages from software.lst with yay (ignoring comments)
-echo "Installing packages from software.lst..."
+echo "Installing extra packages from software.lst..."
 grep -v '^#' software.lst | xargs yay -S --needed --noconfirm
 
 # Delete old configuration folders
