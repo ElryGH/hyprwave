@@ -1,3 +1,6 @@
+## Deprecated
+I switched back to Windows cuz Multiplayer Gaming on Linux is basically non-existant and i like Valorant & COD
+
 # Hyprwave
 
 <img src="https://raw.githubusercontent.com/ElryGH/hyprwave/refs/heads/main/Screenshot.png" alt="Hyprwave Screenshot" width="720" />
